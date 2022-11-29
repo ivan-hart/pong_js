@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .center {
+            height: 100vh;
+            background-color: #444444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .score {
+            display: flex;
+            width: 100%;
+            max-width: 800px;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .score > div {
+            color: #fff;
+            font-size: 3em;
+        }
+        canvas {
+            border: 1px solid black;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Press R to get started or reset!</h1>
+        <div class="score">
+            <div id="left-score">0</div>
+            <div id="right-score">0</div>
+        </div>
+        <canvas width="800" height="450" id="canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
